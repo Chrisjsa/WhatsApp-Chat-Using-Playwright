@@ -38,6 +38,16 @@ To set up the project, use the provided `setup.sh` script:
 
    ```bash
    ./setup.sh
+
+    Menu:
+    1. Initialize Environment
+    2. Run Bot
+    3. Exit
+    
+    Select an option: 1
+    Python 3.13 is already installed.
+    Virtual environment already initialized.
+   
    ```
 
 The `setup.sh` script will:
@@ -50,22 +60,13 @@ The `setup.sh` script will:
 
 After initializing the environment, you can run the WhatsApp bot:
 
-- The bot can be executed through the same `setup.sh` script. Select the appropriate option from the menu:
+- The bot can be executed through the same `setup.sh` script by select the appropriate option from the menu or through the python script:
 
-**Example Usage**:
+**Example Bash**:
 
 ```bash
     ./setup.sh 
-    
-    Menu:
-    1. Initialize Environment
-    2. Run Bot
-    3. Exit
-    
-    Select an option: 1
-    Python 3.13 is already installed.
-    Virtual environment already initialized.
-    
+        
     Menu:
     1. Initialize Environment
     2. Run Bot
@@ -75,7 +76,17 @@ After initializing the environment, you can run the WhatsApp bot:
     Activating virtual environment and running the bot...
 ```
 
+**Example Python**:
+
+```bash
+    source venv/bin/activate
+    python3 src/bot.py 
+```
+
 ### Example of Bot Interaction
+
+- Once the bot is running a pop-up window will appear with the QR code of the WhatsApp Web, it will prompt you to scan the QR code and enter the contact name.
+- You have to wait until the windows load all the chats and then interact with the bot through the terminal.
 
 ```bash
     python src/bot.py 
